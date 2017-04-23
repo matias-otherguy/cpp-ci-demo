@@ -1,2 +1,4 @@
 language: cpp
 compiler: g++
+install: "make install"
+script: "make && make test"
