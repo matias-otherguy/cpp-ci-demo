@@ -24,3 +24,4 @@ test: test.exe
 
 install:
 	mkdir lib && cd lib && wget $(CATCH_URL)
+	apt-get update g++
