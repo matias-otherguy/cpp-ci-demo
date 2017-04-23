@@ -2,3 +2,10 @@ language: cpp
 compiler: g++
 install: "make install"
 script: "make && make test"
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-5.4
+
