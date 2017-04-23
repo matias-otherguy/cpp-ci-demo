@@ -1,0 +1,3 @@
+#!/bin/bash
+CATCH_URL=https://raw.githubusercontent.com/philsquared/Catch/master/single_include/catch.hpp
+mkdir lib && cd lib && wget $CATCH_URL

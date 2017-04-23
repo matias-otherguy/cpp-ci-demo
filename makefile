@@ -3,13 +3,6 @@ LFLAGS = -Wall -std=c++14
 CFLAGS = $(LFLAGS) -c
 OBJS = main.o member.o
 TEST_OBJS = test_main.o test_member.o member.o
-CATCH_URL = https://raw.githubusercontent.com/philsquared/Catch/master/single_include/catch.hpp
-
-test: test.exe
-	./test.exe -r compact
-
-get-deps:
-	mkdir lib && cd lib && wget $(CATCH_URL)
 
 main.exe: $(OBJS)
 	$(CC) $(LFLAGS) $(OBJS) -o main.exe
@@ -24,5 +17,8 @@ main.o: main.cpp member.hpp
 	$(CC) $(CFLAGS) main.cpp
 member.o: member.cpp member.hpp
 	$(CC) $(CFLAGS) member.cpp
+
+test: test.exe
+	./test.exe -s
 
 
