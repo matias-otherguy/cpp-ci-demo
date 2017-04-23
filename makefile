@@ -1,5 +1,5 @@
 CC = g++
-LFLAGS = -Wall -std=c++11
+LFLAGS = -Wall -std=c++0x
 CFLAGS = $(LFLAGS) -c
 OBJS = main.o member.o
 TEST_OBJS = test_main.o test_member.o member.o
