@@ -1,5 +1,5 @@
 CC = g++
-LFLAGS = -Wall -std=c++14
+LFLAGS = -Wall -std=c++11
 CFLAGS = $(LFLAGS) -c
 OBJS = main.o member.o
 TEST_OBJS = test_main.o test_member.o member.o
@@ -24,4 +24,3 @@ test: test.exe
 
 install:
 	mkdir lib && cd lib && wget $(CATCH_URL)
-	sudo apt-get update g++
