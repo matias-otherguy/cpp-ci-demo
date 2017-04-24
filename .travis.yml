@@ -1,5 +1,5 @@
 language: cpp
-compiler: g++
+compiler: g++-5
 install: "make install"
 script: "make && make test"
 addons:
