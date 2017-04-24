@@ -1,4 +1,4 @@
-CC = g++
+CC = g++-5
 LFLAGS = -Wall -std=c++11
 CFLAGS = $(LFLAGS) -c
 OBJS = main.o member.o
